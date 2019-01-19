@@ -1,0 +1,23 @@
+/**
+* Mixins for Buttons   
+*/
+@import "_variable.scss";
+@import "_color.scss";
+
+$paneColors:('gray': gray,
+            'blue': #0078D7,
+            'green':green,
+            'lightblue':lightblue,
+            'orange':orange,
+            'red':red
+);
+
+@mixin paneMixin($color){    
+    -fx-background-color: $color;    
+    -fx-text-fill: $white;
+    -fx-cursor: hand; 
+    -fx-border-raidius: 4px;    
+    .glyph-icon{                
+        -fx-fill: $white;        
+    }     
+}

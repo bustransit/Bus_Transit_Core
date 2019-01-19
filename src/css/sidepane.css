@@ -1,0 +1,22 @@
+/*
+BESTLINK COLLEGE OF THE PHILIPPINES
+This is under License of BSIT 4201
+Provincial Bus Transportation System
+*/
+/* 
+    Created on : 01 17, 19, 12:25:33 AM
+    Author     : NelsonDelaTorre
+*/
+
+.titled-pane .title .glyph-icon{
+    -glyph-size: 16px;
+}
+
+.titled-pane .content .glyph-icon{
+    -glyph-size: 16px;
+}
+
+.titled-pane .button{
+    -fx-cursor: hand;
+    -fx-min-width: 300px;
+}

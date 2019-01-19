@@ -1,0 +1,31 @@
+/**
+* Mixins for Buttons   
+*/
+@import "_variable.scss";
+@import "_color.scss";
+
+$btnSizes:(xsm, sm, md, lg, xl);
+$btnColors:('gray': gray,
+            'blue': #0078D7,
+            'green':green,
+            'lightblue':lightblue,
+            'orange':orange,
+            'red':red
+);
+
+$darkenAmount : 5;
+@mixin buttonMixin($color, $s){
+    $sz : ($s / $baseTextSize)+0em;
+    -fx-background-color: $color;    
+    -fx-text-fill: $white;
+    -fx-cursor: hand; 
+    -fx-border-raidius: 4px;    
+    -fx-font-size:$sz;
+    &:hover{
+        -fx-background-color: lighten($color,$darkenAmount);
+    }    
+    .glyph-icon{        
+        -glyph-size: $sz;
+        -fx-fill: $white;        
+    }     
+}
